@@ -1,7 +1,7 @@
-import { utils, Container } from 'pixi.js';
+import * as PIXI from 'pixi.js';
 
-export default class AnimationLoop extends utils.EventEmitter {
-  constructor(renderer, stage = new Container()){
+export default class AnimationLoop extends PIXI.utils.EventEmitter {
+  constructor(renderer, stage = new PIXI.Container()){
     super();
     this.renderer = renderer;
     this.stage = stage;
